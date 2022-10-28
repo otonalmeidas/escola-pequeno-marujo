@@ -16,7 +16,8 @@ export default createGlobalStyle`
 
   body {
     color: ${props => props.theme.colors.brandingPrimary};
-    background: ${props => props.theme.colors.neutralHighLight};
+    background: ${props => props.theme.colors.brandingPrimary};
+    -webkit-font-smoothing: antialiased
   }
 
   body,
@@ -37,17 +38,6 @@ export default createGlobalStyle`
 
   li {
     list-style: none;
-  }
-
-  @media (max-width: 1280px) {
-    html {
-      font-size: 93.75%;
-    }
-  }
-  @media (max-width: 767px) {
-    html {
-      font-size: 87.5%;
-    }
   }
   
   @media (max-width: 539px) {
