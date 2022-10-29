@@ -1,10 +1,15 @@
+import { Slot } from '@radix-ui/react-slot'
+
 import { ButtonContainer } from './Styled'
 
 interface ButtonProps {
-  variant: 'normal' | 'outline'
-  text: string
+  variant?: 'normal' | 'outline'
+  children: React.ReactNode
+  asChild?: boolean
 }
 
-export function Button({ text, variant }: ButtonProps) {
-  return <ButtonContainer variant={variant}>{text}</ButtonContainer>
+export function Button({ variant = 'normal', children, asChild }: ButtonProps) {
+  const ButtonSlot = asChild ? Slot : ButtonContainer
+
+  return <ButtonSlot variant={variant}>{children}</ButtonSlot>
 }

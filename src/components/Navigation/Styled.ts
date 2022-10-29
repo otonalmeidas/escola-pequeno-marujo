@@ -5,64 +5,35 @@ interface ItemProps {
   isActive: boolean
 }
 
-export const NavigationMenuRoot = styled(NavigationMenu.Root)`
+export const Root = styled(NavigationMenu.Root)`
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  > div {
+    height: 100%;
+  }
+
+  @media (max-width: 960px) {
+    display: none;
+  }
 `
 
-export const NavigationMenuList = styled(NavigationMenu.List)`
+export const List = styled(NavigationMenu.List)`
   display: flex;
+  height: 100%;
   gap: 2rem;
 `
 
-export const NavigationMenuItemContainer = styled.div<ItemProps>`
-  display: flex;
-  align-items: center;
-
-  a,
-  button {
-    ${props =>
-      props.isActive
-        ? css`
-            font-weight: 600;
-          `
-        : css`
-            font-weight: 400;
-          `}
-  }
-`
-
-export const NavigationMenuItem = styled(NavigationMenu.Item)`
-  gap: 0.75rem;
-  display: flex;
-  align-items: center;
-
-  div {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: ${props => props.theme.colors.brandingSecondary};
-  }
-
-  a {
-    font-family: 'Roboto';
-    line-height: 1.187rem;
-    font-size: 1rem;
-  }
-`
-
-export const NavigationMenuTrigger = styled(NavigationMenu.Trigger)`
-  background: transparent;
-  font-family: 'Roboto';
-  line-height: 1.187rem;
-  font-size: 1rem;
-  display: flex;
-  gap: 0.375rem;
-  align-items: center;
+export const Trigger = styled(NavigationMenu.Trigger)`
   border: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: ${props => props.theme.colors.brandingPrimary};
+  background: transparent;
+  gap: 0.375rem;
 
   svg {
     transition: 100ms;
@@ -75,22 +46,53 @@ export const NavigationMenuTrigger = styled(NavigationMenu.Trigger)`
   }
 `
 
-export const NavigationMenuLink = styled(NavigationMenu.Link)`
-  font-family: 'Roboto';
-  line-height: 1.187rem;
-  font-size: 1rem;
+export const Content = styled(NavigationMenu.Content)`
+  position: absolute;
+  bottom: -0.5rem;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-8%) translateY(100%);
+  flex-direction: column;
+  width: 17.687rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1.375rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  background-color: ${props => props.theme.colors.neutralHighMedium};
 `
 
-export const NavigationMenuContent = styled(NavigationMenu.Content)`
-  position: absolute;
-  left: 50%;
-  gap: 1rem;
-  bottom: -0.5rem;
-  transform: translateX(-8%) translateY(100%);
-  width: 283px;
+export const ItemContainer = styled.div<ItemProps>`
   display: flex;
-  flex-direction: column;
-  padding: 1.375rem;
-  background-color: ${props => props.theme.colors.neutralHighMedium};
-  border-radius: 0 0 0.625rem 0.625rem;
+  align-items: center;
+
+  a {
+    ${props =>
+      props.isActive
+        ? css`
+            font-weight: 600;
+          `
+        : css`
+            font-weight: 400;
+          `}
+  }
+`
+
+export const Item = styled(NavigationMenu.Item)`
+  gap: 0.75rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  div {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: ${props => props.theme.colors.brandingSecondary};
+  }
+
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 `
