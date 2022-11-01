@@ -8,11 +8,11 @@ export const ButtonContainer = styled.button<ButtonLinkProps>`
   border-radius: 0.375rem;
   height: fit-content;
   width: fit-content;
+  border: 2px solid ${props => props.theme.colors.brandingSecondary};
 
   ${props =>
     props.variant === 'normal' &&
     css`
-      border: none;
       color: ${props => props.theme.colors.neutralHighPure};
       background-color: ${props => props.theme.colors.brandingSecondary};
     `}
@@ -22,7 +22,6 @@ export const ButtonContainer = styled.button<ButtonLinkProps>`
     css`
       background: transparent;
       color: ${props => props.theme.colors.brandingSecondary};
-      border: 2px solid ${props => props.theme.colors.brandingSecondary};
     `};
 
   span,

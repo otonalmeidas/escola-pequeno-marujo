@@ -16,6 +16,7 @@ const animateDropdown = keyframes`
 `
 
 export const Content = styled(DropdownMenu.Content)`
+  z-index: 999;
   gap: 1rem;
   width: 100vw;
   height: 100vh;
@@ -23,7 +24,7 @@ export const Content = styled(DropdownMenu.Content)`
   align-items: center;
   padding: 1.5rem 1rem;
   flex-direction: column;
-  transform: translateY(2.6rem);
+  transform: translateY(1.42rem);
   background-color: ${props => props.theme.colors.neutralHighPure};
   animation: ${animateDropdown} 100ms ease-in-out;
 
