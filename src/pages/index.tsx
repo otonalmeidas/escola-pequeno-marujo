@@ -1,3 +1,4 @@
+import { Depositions } from '../components/Depositions/Depositions'
 import { Differentials } from '../components/Differentials/Differentials'
 import { Grid } from '../components/Grid/Grid'
 import { Header } from '../components/Header/Header'
@@ -12,6 +13,7 @@ export default function Index() {
       <Grid>
         <Teaching />
         <Differentials />
+        <Depositions />
       </Grid>
     </>
   )

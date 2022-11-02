@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const TeachingContainer = styled.div`
+export const TeachingContainer = styled.section`
   display: flex;
   position: relative;
   flex-direction: column;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const DifferentialsContainer = styled.div`
+export const DifferentialsContainer = styled.section`
   gap: 1.5rem;
   display: flex;
   position: relative;
@@ -8,7 +8,6 @@ export const DifferentialsContainer = styled.div`
   padding: 1.5rem 3rem;
   border-radius: 0.625rem;
   background-color: ${props => props.theme.colors.brandingPrimary};
-  margin-bottom: 10rem;
 
   h4 {
     width: 15rem;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const GridContainer = styled.div`
+export const GridContainer = styled.main`
   margin: 1.5rem auto 3rem;
   flex-direction: column;
   padding: 0 1.5rem;
