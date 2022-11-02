@@ -1,3 +1,4 @@
+import { Differentials } from '../components/Differentials/Differentials'
 import { Grid } from '../components/Grid/Grid'
 import { Header } from '../components/Header/Header'
 import { Hero } from '../components/Hero/Hero'
@@ -10,6 +11,7 @@ export default function Index() {
       <Hero />
       <Grid>
         <Teaching />
+        <Differentials />
       </Grid>
     </>
   )
