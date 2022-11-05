@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import HeroHome from 'public/assets/hero-home.webp'
 
 import { Button } from '../Button/Button'
 import { HeroContainer, Content, Illustration } from './Styled'
@@ -19,7 +20,7 @@ export function Hero() {
           </Button>
         </div>
         <Illustration>
-          <Image src="/assets/hero-home.webp" alt="Teste" priority fill />
+          <Image src={HeroHome} alt="Teste" quality={100} priority fill />
         </Illustration>
       </Content>
     </HeroContainer>

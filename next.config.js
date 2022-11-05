@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 
+const { clear } = require('console')
+
 const nextConfig = {
   reactStrictMode: true,
   compiler: {
     styledComponents: true,
-  },
-  images: {
-    unoptimized: true,
-  },
+  }
 }
 
 module.exports = nextConfig

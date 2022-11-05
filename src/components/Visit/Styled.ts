@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
-export const DepositionsContainer = styled.section`
+export const VisitContainer = styled.section`
   display: flex;
   position: relative;
   padding: 2.5rem 3rem;
-  margin-bottom: 10rem;
   flex-direction: column;
   border-radius: 0.625rem;
   background: rgb(34, 135, 201);
@@ -21,7 +20,7 @@ export const DepositionsContainer = styled.section`
   }
 `
 
-export const Container = styled.div`
+export const VisitContent = styled.div`
   gap: 2rem;
   display: flex;
   flex-direction: column;

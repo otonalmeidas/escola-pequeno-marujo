@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Logo from 'public/assets/logo.webp'
 
 import { Button } from '../Button/Button'
 import { Dropdown } from '../Dropdown/Dropdown'
@@ -11,7 +12,7 @@ export function Header() {
     <HeaderContainer>
       <HeaderContent>
         <Link href="/">
-          <Image src="/assets/logo.webp" alt="Logo da Escola" priority fill />
+          <Image src={Logo} alt="Logo da Escola" quality={100} priority fill />
         </Link>
 
         <Navigation />
