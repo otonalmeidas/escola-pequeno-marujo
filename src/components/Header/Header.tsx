@@ -5,12 +5,12 @@ import Logo from 'public/assets/logo.webp'
 import { Button } from '../Button/Button'
 import { Dropdown } from '../Dropdown/Dropdown'
 import { Navigation } from '../Navigation/Navigation'
-import { Buttons, HeaderContainer, HeaderContent } from './Styled'
+import { Buttons, HeaderContainer, Content } from './Styled'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <HeaderContent>
+      <Content>
         <Link href="/">
           <Image src={Logo} alt="Logo da Escola" quality={100} priority fill />
         </Link>
@@ -18,12 +18,12 @@ export function Header() {
         <Navigation />
 
         <Buttons>
-          <Button variant="outline">
+          <Button type="button" variant="outline">
             <Link href="/agende-sua-visita">Agende sua visita</Link>
           </Button>
           <Dropdown />
         </Buttons>
-      </HeaderContent>
+      </Content>
     </HeaderContainer>
   )
 }

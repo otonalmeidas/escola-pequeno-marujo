@@ -8,7 +8,7 @@ const Theme = {
     brandingPrimary: '#202645',
     brandingPrimaryLight: '#565C81',
     brandingSecondary: '#C4322D',
-    brandingSecondaryOpacify: '#E7BBB9',
+    brandingSecondaryOpacify: '#C4322D50',
     brandingSecondaryDark: '#9E2824',
     brandingTertiary: '#13ABE0',
     brandingQuaternary: '#2287C9',

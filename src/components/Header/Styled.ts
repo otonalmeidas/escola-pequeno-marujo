@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.025);
   background-color: ${props => props.theme.colors.neutralHighPure};
 
   button {
@@ -8,7 +14,7 @@ export const HeaderContainer = styled.header`
   }
 `
 
-export const HeaderContent = styled.div`
+export const Content = styled.div`
   display: grid;
   padding: 0.5rem 1.5rem;
   grid-template-columns: 1fr 2fr 1fr;
@@ -25,8 +31,8 @@ export const HeaderContent = styled.div`
     grid-template-columns: 1fr 1fr;
 
     > a {
-      width: 125px;
-      height: 55.78px;
+      width: 9.3rem;
+      height: 4.15rem;
     }
   }
 `

@@ -52,7 +52,7 @@ export function Differentials() {
           </Icon>
           Pedagogia efetiva
         </div>
-        <div className="keen-slider__slide number-slide1">
+        <div className="keen-slider__slide number-slide2">
           <Icon>
             <Image
               src="/assets/aprendizado-real.webp"
@@ -63,7 +63,7 @@ export function Differentials() {
           </Icon>
           Aprendizado real
         </div>
-        <div className="keen-slider__slide number-slide1">
+        <div className="keen-slider__slide number-slide3">
           <Icon>
             <Image
               src="/assets/solucoes-educacionais.webp"
@@ -74,7 +74,7 @@ export function Differentials() {
           </Icon>
           Soluções educacionais
         </div>
-        <div className="keen-slider__slide number-slide1">
+        <div className="keen-slider__slide number-slide4">
           <Icon>
             <Image
               src="/assets/metodologias-proprias.webp"
@@ -85,7 +85,7 @@ export function Differentials() {
           </Icon>
           Metodologias proprias
         </div>
-        <div className="keen-slider__slide number-slide1">
+        <div className="keen-slider__slide number-slide5">
           <Icon>
             <Image
               src="/assets/troca-de-experiencias.webp"

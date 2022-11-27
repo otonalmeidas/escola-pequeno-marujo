@@ -32,8 +32,9 @@ export const Content = styled(DropdownMenu.Content)`
     margin-top: 3.5rem;
   }
 
-  button {
-    @media (max-width: 539px) {
+  @media (max-width: 539px) {
+    div:last-child,
+    div:last-child button {
       width: 100%;
     }
   }

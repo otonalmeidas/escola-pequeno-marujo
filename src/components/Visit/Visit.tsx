@@ -12,7 +12,7 @@ export function Visit() {
         <p>
           Venha nos visitar, conheça nossas instalações e grades curriculares.
         </p>
-        <Button variant="normal">
+        <Button type="button" variant="normal">
           <Link href="/">Agende sua visita</Link>
         </Button>
       </VisitContent>

@@ -16,9 +16,20 @@ export const FooterContainer = styled.footer`
       height: 5.1875rem;
       position: relative;
     }
+  }
 
-    @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
+    > div {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 960px) {
+    > div {
+      > a {
+        width: 9.3rem;
+        height: 4.15rem;
+      }
     }
   }
 `

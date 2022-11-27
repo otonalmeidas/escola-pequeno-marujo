@@ -44,21 +44,30 @@ export const Trigger = styled(NavigationMenu.Trigger)`
       transform: rotate(180deg);
     }
   }
+
+  &:hover {
+    font-weight: 600;
+  }
 `
 
 export const Content = styled(NavigationMenu.Content)`
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.45rem;
   z-index: 1;
   left: 50%;
   transform: translateX(-8%) translateY(100%);
   flex-direction: column;
-  width: 17.687rem;
   display: flex;
+  width: 18rem;
   gap: 1rem;
   padding: 1.375rem;
   border-radius: 0 0 0.625rem 0.625rem;
+  box-shadow: 3px 7px 16px rgba(36, 41, 66, 0.2);
   background-color: ${props => props.theme.colors.neutralHighMedium};
+
+  a:hover {
+    font-weight: 600;
+  }
 `
 
 export const ItemContainer = styled.div<ItemProps>`
@@ -94,5 +103,10 @@ export const Item = styled(NavigationMenu.Item)`
     height: 100%;
     display: flex;
     align-items: center;
+    color: ${props => props.theme.colors.brandingPrimary};
+
+    &:hover {
+      font-weight: 600;
+    }
   }
 `

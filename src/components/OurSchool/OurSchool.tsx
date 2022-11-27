@@ -45,10 +45,10 @@ export function OurSchool() {
         </ul>
 
         <Buttons>
-          <Button variant="normal">
+          <Button type="button" variant="normal">
             <Link href="/">Saiba mais</Link>
           </Button>
-          <Button variant="outline">
+          <Button type="button" variant="outline">
             <Link href="/">Agende sua visita</Link>
           </Button>
         </Buttons>

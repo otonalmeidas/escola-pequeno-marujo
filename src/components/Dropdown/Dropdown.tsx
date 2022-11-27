@@ -29,7 +29,7 @@ export function Dropdown() {
           />
           <DropdownLink path="/fale-conosco" text="Fale Conosco" />
           <DropdownMenu.Item>
-            <Button variant="normal">
+            <Button type="button" variant="normal">
               <Link href="/fale-conosco">Agende sua visita</Link>
             </Button>
           </DropdownMenu.Item>

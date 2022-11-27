@@ -59,7 +59,7 @@ export const OurSchoolContent = styled.div`
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
 
@@ -76,23 +76,7 @@ export const OurSchoolContent = styled.div`
     }
   }
 
-  @media (max-width: 960px) {
-    h2 {
-      font-size: 2.25rem;
-    }
-  }
-
-  @media (max-width: 767px) {
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
   @media (max-width: 539px) {
-    h2 {
-      font-size: 2rem;
-    }
-
     ul {
       flex-direction: column;
       gap: 0.5rem;

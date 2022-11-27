@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
   body {
     color: ${props => props.theme.colors.brandingPrimary};
-    background: ${props => props.theme.colors.neutralHighPure};
+    background: ${props => props.theme.colors.neutralHighLight};
     -webkit-font-smoothing: antialiased
   }
 
@@ -29,6 +29,10 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  img {
+    pointer-events: none;
   }
 
   a {

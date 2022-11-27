@@ -5,5 +5,14 @@ type GridProps = {
 }
 
 export function Grid(props: GridProps) {
-  return <GridContainer>{props.children}</GridContainer>
+  return (
+    <GridContainer
+      initial={{ transform: 'translateY(2rem)' }}
+      animate={{ transform: 'translateY(0rem)' }}
+      exit={{ transform: 'translateY(2rem)' }}
+      transition={{ duration: 0.35 }}
+    >
+      {props.children}
+    </GridContainer>
+  )
 }

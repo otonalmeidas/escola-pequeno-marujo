@@ -5,7 +5,7 @@ export const VisitContainer = styled.section`
   position: relative;
   padding: 2.5rem 3rem;
   flex-direction: column;
-  border-radius: 0.625rem;
+  border-radius: 1.25rem;
   background: rgb(34, 135, 201);
   background: linear-gradient(
     90deg,
